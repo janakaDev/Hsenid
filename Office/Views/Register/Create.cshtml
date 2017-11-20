@@ -1,0 +1,28 @@
+﻿@model Office.ViewModels.UsersViewModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form id="myForm">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" ,@placeholder = "Name"})
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" , @placeholder = "Name" })
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password, new { @class = "form-control" , @placeholder = "Name" })
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+    <h1 class="hidden" id="success">Sucess Fully Addes</h1>
+    <button type="" value="" class="btn btn-danger" onclick="RegisterUser()">Save</button>
+</form>

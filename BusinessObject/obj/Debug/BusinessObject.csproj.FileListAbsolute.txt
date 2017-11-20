@@ -1,0 +1,4 @@
+c:\Users\jsb\documents\visual studio 2015\Projects\Office\BusinessObject\bin\Debug\BusinessObject.dll
+c:\Users\jsb\documents\visual studio 2015\Projects\Office\BusinessObject\bin\Debug\BusinessObject.pdb
+c:\Users\jsb\documents\visual studio 2015\Projects\Office\BusinessObject\obj\Debug\BusinessObject.dll
+c:\Users\jsb\documents\visual studio 2015\Projects\Office\BusinessObject\obj\Debug\BusinessObject.pdb

@@ -1,0 +1,31 @@
+﻿@model Office.ViewModels.EmployeeViewModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Create", "Employee", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m=>m.FirstName)
+        @Html.TextBoxFor(m=>m.FirstName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.FirstName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.LastName)
+        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.LastName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Designation)
+        @Html.TextBoxFor(m => m.Designation, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Designation)
+    </div>
+
+
+    <button type="submit" value="submit" >Submit</button>
+
+}

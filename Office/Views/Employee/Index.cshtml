@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Office.ViewModels.EmployeeViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@{ 
+    List<string> li = new List<string>();
+
+    foreach (var item in Model)
+    {
+        li.Add(
+               item.FirstName
+            );
+    }
+
+    SelectList list = new SelectList(li);
+
+}
+
+
+
+
+<div class="container">
+    <div class="row col-md-6 col-md-offset-2 custyle">
+        <table class="table table-striped custab">
+            <thead>
+               @Html.ActionLink("ViewData", "GetId", "Employee", new { reportID = "Janaka" }, new { @class = "form-control" });
+                <tr>
+                    <th>ID</th>
+                    <th>FirstName</th>
+                    <th>Designation</th>
+                    <th class="text-center">Designation</th>
+                </tr>
+            </thead>
+           @foreach (var item in Model)
+           {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.FirstName</td>
+                <td>@item.Designation</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs" id="btnDelete"  x-id="123" onclick="DeleteEmployee(@item.Id)"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+            </tr>
+           }
+        </table>
+    </div>
+</div>
+
+<form id="ajaxForm">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        @Html.DropDownList("Name", list as SelectList, new { @class = "form-control", @onchange = "AddData();AddData2()" });
+    </div>
+    <div class="form-group">
+        <label for="Designation">Designation</label>
+        <input class="form-control" id="Designation" type="text">
+    </div>
+    <div class="form-group">
+        <label for="Dated">Date</label>
+        <input class="form-control" id="Dated" type="date">
+    </div>
+    <div class="form-group">
+        <label for="Ot">Ot Hours</label>
+        <input class="form-control" id="Ot" type="text">
+    </div>
+    <button type="button" class="btn btn-danger" id="Save" onclick="AddOtHours()">Add</button>
+</form>
+
+<div class="form-group">
+    <label for="Ot">Total Ot Hours</label>
+    <input class="form-control" id="TotalOt" type="text">
+</div>

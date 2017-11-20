@@ -1,0 +1,7 @@
+c:\Users\jsb\documents\visual studio 2015\Projects\Office\DataAccess\bin\Debug\DataAccess.dll
+c:\Users\jsb\documents\visual studio 2015\Projects\Office\DataAccess\bin\Debug\DataAccess.pdb
+c:\Users\jsb\documents\visual studio 2015\Projects\Office\DataAccess\obj\Debug\DataAccess.dll
+c:\Users\jsb\documents\visual studio 2015\Projects\Office\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\jsb\documents\visual studio 2015\Projects\Office\DataAccess\bin\Debug\BusinessObject.dll
+C:\Users\jsb\documents\visual studio 2015\Projects\Office\DataAccess\bin\Debug\BusinessObject.pdb
+C:\Users\jsb\documents\visual studio 2015\Projects\Office\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
