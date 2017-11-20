@@ -56,12 +56,12 @@ namespace BusinessLogic
         }
 
 
-        public bool DeleteEmployeeLogic(int id)
+        public int DeleteEmployeeLogic(int id)
         {
            
                 HandleEmployeeData handleEmployeeData = new HandleEmployeeData();
-                bool x= handleEmployeeData.DeleteEmployee(id);
-                return x;         
+                int x=handleEmployeeData.DeleteEmployee(id);
+            return x;
         }
 
 

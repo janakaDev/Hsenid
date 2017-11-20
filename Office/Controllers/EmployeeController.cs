@@ -93,7 +93,7 @@ namespace Office.Controllers
             int x = 0;
             string nameL = namew;
             EmployeeLogic emp = new EmployeeLogic();
-            x = emp.GetSumOfOtHoursLogic("Janaka");
+            x = emp.GetSumOfOtHoursLogic(namew);
             ViewBag.Mess = x;
             return View();
         }
@@ -172,7 +172,7 @@ namespace Office.Controllers
         {
             int idx = Convert.ToInt16(id);
             EmployeeLogic emp = new EmployeeLogic();
-            bool x =emp.DeleteEmployeeLogic(idx);
+            int x = emp.DeleteEmployeeLogic(idx);
             return View();
 
         }
